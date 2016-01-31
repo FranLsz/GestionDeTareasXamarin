@@ -53,6 +53,7 @@ namespace ClienteMovilGestionDeTareas.ViewModel.Tarea
             {
                 vm.Titulo = "Nueva tarea para " + Titulo;
                 vm.Grupo = Grupo;
+                vm.AgregarLbl = "Crear tarea";
             });
         }
 
@@ -77,13 +78,20 @@ namespace ClienteMovilGestionDeTareas.ViewModel.Tarea
 
         public async Task EditarTarea(TareaModel model)
         {
-            //
+            await _navigator.PushAsync<NuevaTareaViewModel>(vm =>
+            {
+                vm.Titulo = "Editar tarea de " + Titulo;
+                vm.AgregarLbl = "Guardar cambios";
+                vm.Tarea = model;
+                vm.Editing = true;
+            });
         }
 
         public async Task FinalizarTarea(TareaModel model)
         {
             model.Finalizada = true;
-            var res = await _servicioDatos.UpdateTarea(model);
+            //var res = await _servicioDatos.UpdateTarea(model);
+            var res = true;
 
             if (res)
             {

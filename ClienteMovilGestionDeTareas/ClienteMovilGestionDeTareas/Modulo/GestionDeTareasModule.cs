@@ -33,7 +33,7 @@ namespace ClienteMovilGestionDeTareas.Modulo
             builder.RegisterType<HomeViewModel>().SingleInstance();
             builder.RegisterType<NuevoGrupoViewModel>();
             builder.RegisterType<ListadoTareasViewModel>().SingleInstance();
-            builder.RegisterType<NuevaTareaViewModel>().SingleInstance();
+            builder.RegisterType<NuevaTareaViewModel>();
 
 
 

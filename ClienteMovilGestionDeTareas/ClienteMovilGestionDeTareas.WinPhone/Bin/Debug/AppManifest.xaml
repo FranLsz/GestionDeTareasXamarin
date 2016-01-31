@@ -13,8 +13,8 @@
     <AssemblyPart x:Name="Xamarin.Forms.Platform.WP8" Source="Xamarin.Forms.Platform.WP8.dll" />
     <AssemblyPart x:Name="Xamarin.Forms.Xaml" Source="Xamarin.Forms.Xaml.dll" />
     <AssemblyPart x:Name="MvvmLibrary" Source="MvvmLibrary.dll" />
-    <AssemblyPart x:Name="DataModel" Source="DataModel.dll" />
     <AssemblyPart x:Name="Autofac" Source="Autofac.dll" />
+    <AssemblyPart x:Name="DataModel" Source="DataModel.dll" />
     <AssemblyPart x:Name="System.Windows.Interactivity" Source="System.Windows.Interactivity.dll" />
   </Deployment.Parts>
 </Deployment>

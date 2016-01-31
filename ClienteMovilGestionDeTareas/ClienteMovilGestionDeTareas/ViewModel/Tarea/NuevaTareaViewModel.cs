@@ -15,9 +15,10 @@ namespace ClienteMovilGestionDeTareas.ViewModel.Tarea
         public string TituloLbl => "Titulo";
         public string DescripcionLbl => "Descripción";
         public string FechaLbl => "Fecha";
-        public string AgregarLbl => "Crear tarea";
+        public string AgregarLbl { get; set; }
         public string AgregarImagenLbl => "Agregar imagen";
         public string AgregarDocumentoLbl => "Agregar documento";
+        public bool Editing { get; set; }
 
         private TareaModel _tarea;
         public TareaModel Tarea
@@ -28,6 +29,8 @@ namespace ClienteMovilGestionDeTareas.ViewModel.Tarea
 
         public GrupoModel Grupo { get; set; }
 
+
+
         public NuevaTareaViewModel(INavigator navigator, IServicioDatos servicioDatos, Session session, IPage page) : base(navigator, servicioDatos, session, page)
         {
             _tarea = new TareaModel();
@@ -36,23 +39,36 @@ namespace ClienteMovilGestionDeTareas.ViewModel.Tarea
 
         private async void Agregar()
         {
-            Tarea.IdUsuario = Session.User.Id;
-            Tarea.IdGrupo = Grupo.Id;
-            Tarea.Ubicacion = string.Empty;
-
-            try
+            if (!Editing)
             {
-                var tarea = await _servicioDatos.AddTarea(Tarea);
+                Tarea.IdGrupo = Grupo.Id;
+                Tarea.Ubicacion = string.Empty;
 
-                if (tarea != null)
+                try
                 {
-                    await _page.MostrarAlerta("", "Tarea creada correctamente", "Ok");
-                    await _navigator.PopAsync();
+                    var tarea = await _servicioDatos.AddTarea(Tarea);
+                    if (tarea != null)
+                    {
+                        await _page.MostrarAlerta("", "Tarea creada correctamente", "Ok");
+                        await _navigator.PopAsync();
+                    }
                 }
+                catch (Exception) { }
+
             }
-            catch (Exception)
+            else
             {
-                // ignored
+                try
+                {
+                    //var res = await _servicioDatos.UpdateTarea(Tarea);
+                    var res = true;
+                    if (res)
+                    {
+                        await _page.MostrarAlerta("", "Tarea actualizada correctamente", "Ok");
+                        await _navigator.PopAsync();
+                    }
+                }
+                catch (Exception) { }
             }
         }
     }
