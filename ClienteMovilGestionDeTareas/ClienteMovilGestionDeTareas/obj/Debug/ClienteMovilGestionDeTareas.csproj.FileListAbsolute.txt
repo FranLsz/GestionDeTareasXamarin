@@ -31,5 +31,3 @@ C:\Users\Fran\Documents\Visual Studio 2015\Projects\ClienteMovilGestionDeTareas\
 C:\Users\Fran\Documents\Visual Studio 2015\Projects\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\obj\Debug\Home.xaml.g.cs
 C:\Users\Fran\Documents\Visual Studio 2015\Projects\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\obj\Debug\ClienteMovilGestionDeTareas.dll.mdb
 C:\Users\Fran\Documents\Visual Studio 2015\Projects\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\bin\Debug\ClienteMovilGestionDeTareas.dll.mdb
-C:\Users\Fran\Documents\Visual Studio 2015\Projects\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\obj\Debug\ClienteMovilGestionDeTareas.dll.mdb
-C:\Users\Fran\Documents\Visual Studio 2015\Projects\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\bin\Debug\ClienteMovilGestionDeTareas.dll.mdb

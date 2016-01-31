@@ -34,6 +34,5 @@ C:\Users\Fran\Documents\Visual Studio 2015\Projects\ClienteMovilGestionDeTareas\
 C:\Users\Fran\Documents\Visual Studio 2015\Projects\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.Droid\bin\Debug\MvvmLibrary.pdb
 C:\Users\Fran\Documents\Visual Studio 2015\Projects\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.Droid\bin\Debug\Autofac.xml
 C:\Users\Fran\Documents\Visual Studio 2015\Projects\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.Droid\bin\Debug\DataModel.pdb
-C:\Users\Fran\Documents\Visual Studio 2015\Projects\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.Droid\bin\Debug\ClienteMovilGestionDeTareas.dll.mdb
 C:\Users\Fran\Documents\Visual Studio 2015\Projects\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.Droid\obj\Debug\ClienteMovilGestionDeTareas.Droid.dll.mdb
 C:\Users\Fran\Documents\Visual Studio 2015\Projects\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.Droid\bin\Debug\ClienteMovilGestionDeTareas.Droid.dll.mdb
