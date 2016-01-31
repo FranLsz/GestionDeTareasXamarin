@@ -8,16 +8,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ClienteMovilGestionDeTareas.View {
+namespace ClienteMovilGestionDeTareas.View.Grupo {
     using System;
     using Xamarin.Forms;
     using Xamarin.Forms.Xaml;
     
     
-    public partial class Home : ContentPage {
+    public partial class NuevoGrupoView : ContentPage {
         
         private void InitializeComponent() {
-            this.LoadFromXaml(typeof(Home));
+            this.LoadFromXaml(typeof(NuevoGrupoView));
         }
     }
 }

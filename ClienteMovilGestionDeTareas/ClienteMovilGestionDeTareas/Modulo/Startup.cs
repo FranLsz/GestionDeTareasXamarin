@@ -1,6 +1,10 @@
 ﻿using Autofac;
 using ClienteMovilGestionDeTareas.View;
+using ClienteMovilGestionDeTareas.View.Grupo;
+using ClienteMovilGestionDeTareas.View.Tarea;
 using ClienteMovilGestionDeTareas.ViewModel;
+using ClienteMovilGestionDeTareas.ViewModel.Grupo;
+using ClienteMovilGestionDeTareas.ViewModel.Tarea;
 using MvvmLibrary.Factorias;
 using MvvmLibrary.Modulo;
 using Xamarin.Forms;
@@ -24,8 +28,11 @@ namespace ClienteMovilGestionDeTareas.Modulo
 
         protected override void RegisterViews(IViewFactory viewFactory)
         {
-            viewFactory.Register<LoginViewModel, Login>();
-            viewFactory.Register<HomeViewModel, Home>();
+            viewFactory.Register<LoginViewModel, LoginView>();
+            viewFactory.Register<HomeViewModel, HomeView>();
+            viewFactory.Register<NuevoGrupoViewModel, NuevoGrupoView>();
+            viewFactory.Register<ListadoTareasViewModel, ListadoTareasView>();
+            viewFactory.Register<NuevaTareaViewModel, NuevaTareaView>();
         }
 
         protected override void ConfigureApplication(IContainer container)

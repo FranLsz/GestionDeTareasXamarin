@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using ClienteMovilGestionDeTareas.Util;
 using DataModel.ViewModel;
@@ -80,8 +81,115 @@ namespace ClienteMovilGestionDeTareas.Service
 
             return null;
         }
+        #endregion
+
+
+        #region Tarea
+
+        public async Task<GrupoModel> AddGrupo(GrupoModel model)
+        {
+            var request = new RestRequest("Tarea")
+            {
+                Method = Method.POST
+            };
+            request.AddJsonBody(model);
+            var response = await _client.Execute<GrupoModel>(request);
+
+            if (response.IsSuccess)
+                return response.Data;
+            return null;
+        }
+
+
+        public async Task<ICollection<GrupoModel>> GetGrupos(int userId)
+        {
+            var request = new RestRequest("Grupo") { Method = Method.GET };
+            request.AddQueryParameter("userId", userId);
+
+            var response = await _client.Execute<ICollection<GrupoModel>>(request);
+            if (response.IsSuccess)
+                return response.Data;
+            return null;
+        }
+
+        public async Task<bool> DeleteGrupo(int id)
+        {
+            var request = new RestRequest("Grupo") { Method = Method.DELETE };
+            request.AddQueryParameter("id", id);
+
+            var response = await _client.Execute(request);
+            if (response.IsSuccess)
+                return true;
+
+            return false;
+        }
 
         #endregion
+
+
+        #region Tarea
+
+        public async Task<TareaModel> AddTarea(TareaModel model)
+        {
+            var request = new RestRequest("Tarea")
+            {
+                Method = Method.POST
+            };
+            request.AddJsonBody(model);
+            var response = await _client.Execute<TareaModel>(request);
+
+            if (response.IsSuccess)
+                return response.Data;
+            return null;
+        }
+
+        public async Task<ICollection<TareaModel>> GetTareas(int grupoId)
+        {
+            var request = new RestRequest("Tarea") { Method = Method.GET };
+            request.AddQueryParameter("grupoId", grupoId);
+
+            var response = await _client.Execute<ICollection<TareaModel>>(request);
+            if (response.IsSuccess)
+                return response.Data;
+
+            return null;
+        }
+
+        public async Task<bool> UpdateTarea(TareaModel model)
+        {
+            var request = new RestRequest("Tarea") { Method = Method.PUT };
+            request.AddQueryParameter("id", model.Id);
+            request.AddJsonBody(model);
+
+            try
+            {
+                var response = await _client.Execute(request);
+                if (response.IsSuccess)
+                    return true;
+            }
+            catch (Exception ex)
+            {
+
+                var r = ex.Message;
+            }
+
+            return false;
+        }
+
+        public async Task<bool> DeleteTarea(int id)
+        {
+            var request = new RestRequest("Tarea") { Method = Method.DELETE };
+            request.AddQueryParameter("id", id);
+
+            var response = await _client.Execute(request);
+            if (response.IsSuccess)
+                return true;
+
+            return false;
+        }
+
+        #endregion
+
 
 
     }

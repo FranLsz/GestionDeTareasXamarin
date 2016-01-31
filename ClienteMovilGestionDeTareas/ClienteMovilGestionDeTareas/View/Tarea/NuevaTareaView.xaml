@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ClienteMovilGestionDeTareas.View.Tarea.NuevaTareaView">
+  <StackLayout Padding="35">
+    <Label Text="{Binding TituloLbl}"></Label>
+    <Entry Text="{Binding Tarea.Titulo}"></Entry>
+    <Label Text="{Binding FechaLbl}"></Label>
+    <DatePicker Date="{Binding Tarea.Fecha}"></DatePicker>
+    <Label Text="{Binding DescripcionLbl}"></Label>
+    <Editor Text="{Binding Tarea.Descripcion}" VerticalOptions="FillAndExpand"></Editor>
+
+    <Button Text="{Binding AgregarImagenLbl}" Command="{Binding CmdAgregarImagen}"></Button>
+    <Button Text="{Binding AgregarDocumentoLbl}" Command="{Binding CmdAgregarDocumento}"></Button>
+
+    <Button Text="{Binding AgregarLbl}" Command="{Binding CmdAgregar}"></Button>
+  </StackLayout>
+</ContentPage>

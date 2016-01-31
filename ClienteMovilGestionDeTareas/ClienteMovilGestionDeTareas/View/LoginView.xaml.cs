@@ -8,9 +8,9 @@ using Xamarin.Forms;
 
 namespace ClienteMovilGestionDeTareas.View
 {
-    public partial class Home : ContentPage
+    public partial class LoginView : ContentPage
     {
-        public Home()
+        public LoginView()
         {
             InitializeComponent();
         }

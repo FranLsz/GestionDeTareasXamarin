@@ -16,6 +16,21 @@ namespace ClienteMovilGestionDeTareas.Service
 
         #endregion
 
+        #region Tareas
 
+        Task<GrupoModel> AddGrupo(GrupoModel model);
+        Task<ICollection<GrupoModel>> GetGrupos(int userId);
+        Task<bool> DeleteGrupo(int id);
+
+        #endregion
+
+        #region Tareas
+
+        Task<TareaModel> AddTarea(TareaModel model);
+        Task<ICollection<TareaModel>> GetTareas(int grupoId);
+        Task<bool> UpdateTarea(TareaModel model);
+        Task<bool> DeleteTarea(int id);
+
+        #endregion
     }
 }

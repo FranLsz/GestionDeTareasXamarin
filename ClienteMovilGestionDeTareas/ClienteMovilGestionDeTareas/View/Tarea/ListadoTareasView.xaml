@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ClienteMovilGestionDeTareas.View.Tarea.ListadoTareasView"
+             Title ="{Binding Titulo}">
+  <StackLayout Padding="20">
+    <Label Text="{Binding MisTareasLbl}" XAlign="Center"></Label>
+    <ListView ItemsSource="{Binding Tareas, Mode=TwoWay}" SelectedItem="{Binding TareaSeleccionada, Mode=TwoWay}">
+      <ListView.ItemTemplate >
+        <DataTemplate>
+          <ViewCell>
+            <ViewCell.ContextActions>
+              <MenuItem Text="Finalizar tarea" Command="{Binding CmdFinalizar}"/>
+              <MenuItem Text="Editar" Command="{Binding CmdEditar}"/>
+              <MenuItem Text="Eliminar" Command="{Binding CmdBorrar}"/>
+            </ViewCell.ContextActions>
+            <StackLayout>
+              <Label Text="{Binding TareaModel.Titulo}"></Label>
+            </StackLayout>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+    <Button Text="{Binding NuevaTareaLbl}" Command="{Binding CmdNuevaTarea}"></Button>
+  </StackLayout>
+</ContentPage>

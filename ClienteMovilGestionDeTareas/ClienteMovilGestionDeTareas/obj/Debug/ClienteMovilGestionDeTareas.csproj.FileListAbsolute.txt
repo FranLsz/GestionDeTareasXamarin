@@ -27,7 +27,10 @@ C:\Users\Fran\Documents\Visual Studio 2015\Projects\ClienteMovilGestionDeTareas\
 C:\Users\Fran\Documents\Visual Studio 2015\Projects\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\bin\Debug\DataModel.pdb
 C:\Users\Fran\Documents\Visual Studio 2015\Projects\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\bin\Debug\MvvmLibrary.pdb
 C:\Users\Fran\Documents\Visual Studio 2015\Projects\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\bin\Debug\Autofac.xml
-C:\Users\Fran\Documents\Visual Studio 2015\Projects\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\obj\Debug\Login.xaml.g.cs
-C:\Users\Fran\Documents\Visual Studio 2015\Projects\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\obj\Debug\Home.xaml.g.cs
+C:\Users\Fran\Documents\Visual Studio 2015\Projects\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\obj\Debug\HomeView.xaml.g.cs
+C:\Users\Fran\Documents\Visual Studio 2015\Projects\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\obj\Debug\LoginView.xaml.g.cs
+C:\Users\Fran\Documents\Visual Studio 2015\Projects\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\obj\Debug\NuevoGrupoView.xaml.g.cs
+C:\Users\Fran\Documents\Visual Studio 2015\Projects\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\obj\Debug\ListadoTareasView.xaml.g.cs
+C:\Users\Fran\Documents\Visual Studio 2015\Projects\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\obj\Debug\NuevaTareaView.xaml.g.cs
 C:\Users\Fran\Documents\Visual Studio 2015\Projects\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\obj\Debug\ClienteMovilGestionDeTareas.dll.mdb
 C:\Users\Fran\Documents\Visual Studio 2015\Projects\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\bin\Debug\ClienteMovilGestionDeTareas.dll.mdb

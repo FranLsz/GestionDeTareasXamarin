@@ -14,10 +14,10 @@ namespace ClienteMovilGestionDeTareas.View {
     using Xamarin.Forms.Xaml;
     
     
-    public partial class Login : ContentPage {
+    public partial class HomeView : ContentPage {
         
         private void InitializeComponent() {
-            this.LoadFromXaml(typeof(Login));
+            this.LoadFromXaml(typeof(HomeView));
         }
     }
 }

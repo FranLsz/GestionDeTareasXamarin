@@ -3,7 +3,11 @@ using Autofac;
 using ClienteMovilGestionDeTareas.Service;
 using ClienteMovilGestionDeTareas.Util;
 using ClienteMovilGestionDeTareas.View;
+using ClienteMovilGestionDeTareas.View.Grupo;
+using ClienteMovilGestionDeTareas.View.Tarea;
 using ClienteMovilGestionDeTareas.ViewModel;
+using ClienteMovilGestionDeTareas.ViewModel.Grupo;
+using ClienteMovilGestionDeTareas.ViewModel.Tarea;
 using MvvmLibrary.Factorias;
 using Xamarin.Forms;
 
@@ -18,16 +22,23 @@ namespace ClienteMovilGestionDeTareas.Modulo
             builder.RegisterType<Session>().SingleInstance();
 
             // PAGES
-            builder.RegisterType<Login>().SingleInstance();
-            builder.RegisterType<Home>().SingleInstance();
+            builder.RegisterType<LoginView>().SingleInstance();
+            builder.RegisterType<HomeView>().SingleInstance();
+            builder.RegisterType<NuevoGrupoView>().SingleInstance();
+            builder.RegisterType<ListadoTareasView>().SingleInstance();
+            builder.RegisterType<NuevaTareaView>().SingleInstance();
 
             // VIEWMODELS
             builder.RegisterType<LoginViewModel>().SingleInstance();
             builder.RegisterType<HomeViewModel>().SingleInstance();
+            builder.RegisterType<NuevoGrupoViewModel>();
+            builder.RegisterType<ListadoTareasViewModel>().SingleInstance();
+            builder.RegisterType<NuevaTareaViewModel>().SingleInstance();
 
 
-            
-            
+
+
+
             builder.RegisterInstance<Func<Page>>(() =>
             {
                 // accedemos al mainpage y pedimos la masterdetaulpage
