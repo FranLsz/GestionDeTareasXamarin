@@ -33,7 +33,7 @@ namespace ClienteMovilGestionDeTareas.Modulo
             viewFactory.Register<NuevoGrupoViewModel, NuevoGrupoView>();
             viewFactory.Register<ListadoTareasViewModel, ListadoTareasView>();
             viewFactory.Register<NuevaTareaViewModel, NuevaTareaView>();
-            viewFactory.Register<EditarTareaViewModel, EditarTareaView>();
+            viewFactory.Register<DetalleTareaViewModel, DetalleTareaView>();
         }
 
         protected override void ConfigureApplication(IContainer container)

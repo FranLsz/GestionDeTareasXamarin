@@ -50,7 +50,7 @@
     <Compile Include="ViewModel\HomeViewModel.cs" />
     <Compile Include="ViewModel\LoginViewModel.cs" />
     <Compile Include="ViewModel\Grupo\NuevoGrupoViewModel.cs" />
-    <Compile Include="ViewModel\Tarea\EditarTareaViewModel.cs" />
+    <Compile Include="ViewModel\Tarea\DetalleTareaViewModel.cs" />
     <Compile Include="ViewModel\Tarea\ListadoTareasViewModel.cs" />
     <Compile Include="ViewModel\Tarea\NuevaTareaViewModel.cs" />
     <Compile Include="View\Grupo\NuevoGrupoView.xaml.cs">
@@ -62,8 +62,8 @@
     <Compile Include="View\LoginView.xaml.cs">
       <DependentUpon>LoginView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\Tarea\EditarTareaView.xaml.cs">
-      <DependentUpon>EditarTareaView.xaml</DependentUpon>
+    <Compile Include="View\Tarea\DetalleTareaView.xaml.cs">
+      <DependentUpon>DetalleTareaView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\Tarea\ListadoTareasView.xaml.cs">
       <DependentUpon>ListadoTareasView.xaml</DependentUpon>
@@ -154,7 +154,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="View\Tarea\EditarTareaView.xaml">
+    <EmbeddedResource Include="View\Tarea\DetalleTareaView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

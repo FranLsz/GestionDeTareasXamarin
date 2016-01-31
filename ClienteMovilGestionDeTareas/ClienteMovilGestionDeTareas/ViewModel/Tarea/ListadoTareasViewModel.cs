@@ -1,4 +1,5 @@
-﻿using System.Collections.ObjectModel;
+﻿using System;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
@@ -57,23 +58,38 @@ namespace ClienteMovilGestionDeTareas.ViewModel.Tarea
             });
         }
 
-        private void VerDetalleTarea(TareaVm value)
+        private async void VerDetalleTarea(TareaVm model)
         {
-            //
+            await _navigator.PushAsync<DetalleTareaViewModel>(vm =>
+            {
+                vm.Titulo = "Detalles de la tarea";
+                vm.Tarea = model.TareaModel;
+            });
         }
 
         public async Task BorrarTarea(int id)
         {
-            var res = await _servicioDatos.DeleteTarea(id);
-
-            if (res)
+            try
             {
-                Tareas.Remove(Tareas.First(o => o.TareaModel.Id == id));
-                await _page.MostrarAlerta("", "Tarea eliminada correctamente", "Ok");
+                IsBusy = true;
+                var res = await _servicioDatos.DeleteTarea(id);
 
+                if (res)
+                {
+                    Tareas.Remove(Tareas.First(o => o.TareaModel.Id == id));
+                    await _page.MostrarAlerta("", "Tarea eliminada correctamente", "Ok");
+                }
+                else
+                    await _page.MostrarAlerta("", "La tarea no pudo ser borrada", "Ok");
             }
-            else
-                await _page.MostrarAlerta("", "La tarea no pudo ser borrada", "Ok");
+            catch (Exception ex)
+            {
+                await _page.MostrarAlerta("Error", ex.Message, "Ok");
+            }
+            finally
+            {
+                IsBusy = false;
+            }
         }
 
         public async Task EditarTarea(TareaModel model)
@@ -89,17 +105,27 @@ namespace ClienteMovilGestionDeTareas.ViewModel.Tarea
 
         public async Task FinalizarTarea(TareaModel model)
         {
-            model.Finalizada = true;
-            //var res = await _servicioDatos.UpdateTarea(model);
-            var res = true;
-
-            if (res)
+            try
             {
-                await _page.MostrarAlerta("", "Tarea finalizada", "Ok");
+                IsBusy = true;
+                model.Finalizada = true;
+                var res = await _servicioDatos.UpdateTarea(model);
 
+                if (res)
+                {
+                    await _page.MostrarAlerta("", "Tarea finalizada", "Ok");
+                }
+                else
+                    await _page.MostrarAlerta("", "La tarea no pudo ser finalizada", "Ok");
             }
-            else
-                await _page.MostrarAlerta("", "La tarea no pudo ser finalizada", "Ok");
+            catch (Exception ex)
+            {
+                await _page.MostrarAlerta("Error", ex.Message, "Ok");
+            }
+            finally
+            {
+                IsBusy = false;
+            }
         }
 
     }

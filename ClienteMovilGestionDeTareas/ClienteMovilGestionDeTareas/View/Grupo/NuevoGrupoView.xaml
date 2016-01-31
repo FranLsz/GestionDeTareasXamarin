@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ClienteMovilGestionDeTareas.View.Grupo.NuevoGrupoView"
              Title="{Binding Titulo}">
-  <StackLayout Padding="35">
+  <StackLayout Padding="35" Opacity="{Binding Opacity, Mode=TwoWay}" IsEnabled="{Binding Enabled, Mode=TwoWay}">
     <Label Text="{Binding NombreLbl}"></Label>
     <Entry Text="{Binding Grupo.Nombre}"></Entry>
     

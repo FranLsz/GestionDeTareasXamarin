@@ -27,6 +27,7 @@ namespace ClienteMovilGestionDeTareas.Modulo
             builder.RegisterType<NuevoGrupoView>().SingleInstance();
             builder.RegisterType<ListadoTareasView>().SingleInstance();
             builder.RegisterType<NuevaTareaView>().SingleInstance();
+            builder.RegisterType<DetalleTareaView>().SingleInstance();
 
             // VIEWMODELS
             builder.RegisterType<LoginViewModel>().SingleInstance();
@@ -34,6 +35,7 @@ namespace ClienteMovilGestionDeTareas.Modulo
             builder.RegisterType<NuevoGrupoViewModel>();
             builder.RegisterType<ListadoTareasViewModel>().SingleInstance();
             builder.RegisterType<NuevaTareaViewModel>();
+            builder.RegisterType<DetalleTareaViewModel>();
 
 
 

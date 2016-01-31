@@ -32,14 +32,11 @@ namespace ClienteMovilGestionDeTareas.ViewModel
             set { SetProperty(ref _usuario, value); }
         }
 
-        // PAGE
-        public Page Page;
 
         // CTOR
         public LoginViewModel(INavigator navigator, IServicioDatos servicioDatos, Session session, IPage page, IComponentContext ctx) : base(navigator, servicioDatos, session, page)
         {
             Context = ctx;
-            Page = new Page();
             Usuario = new UsuarioModel();
             Usuario = new UsuarioModel();
             cmdLogin = new Command(IniciarSesion);
@@ -84,12 +81,12 @@ namespace ClienteMovilGestionDeTareas.ViewModel
                 }
                 else
                 {
-                    await Page.DisplayAlert("Imposible iniciar sesión", "Email o contraseña incorrectos", "OK");
+                    await _page.MostrarAlerta("Imposible iniciar sesión", "Email o contraseña incorrectos", "OK");
                 }
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-                await Page.DisplayAlert("Error", e.Message, "OK");
+                await _page.MostrarAlerta("Error", ex.Message, "Ok");
             }
             finally
             {

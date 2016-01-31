@@ -32,6 +32,6 @@ C:\Users\Fran\Documents\Visual Studio 2015\Projects\ClienteMovilGestionDeTareas\
 C:\Users\Fran\Documents\Visual Studio 2015\Projects\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\obj\Debug\NuevoGrupoView.xaml.g.cs
 C:\Users\Fran\Documents\Visual Studio 2015\Projects\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\obj\Debug\ListadoTareasView.xaml.g.cs
 C:\Users\Fran\Documents\Visual Studio 2015\Projects\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\obj\Debug\NuevaTareaView.xaml.g.cs
-C:\Users\Fran\Documents\Visual Studio 2015\Projects\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\obj\Debug\EditarTareaView.xaml.g.cs
+C:\Users\Fran\Documents\Visual Studio 2015\Projects\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\obj\Debug\DetalleTareaView.xaml.g.cs
 C:\Users\Fran\Documents\Visual Studio 2015\Projects\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\obj\Debug\ClienteMovilGestionDeTareas.dll.mdb
 C:\Users\Fran\Documents\Visual Studio 2015\Projects\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\bin\Debug\ClienteMovilGestionDeTareas.dll.mdb

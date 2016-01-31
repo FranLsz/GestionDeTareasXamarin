@@ -39,13 +39,14 @@ namespace ClienteMovilGestionDeTareas.ViewModel.Tarea
 
         private async void Agregar()
         {
-            if (!Editing)
+            try
             {
-                Tarea.IdGrupo = Grupo.Id;
-                Tarea.Ubicacion = string.Empty;
-
-                try
+                IsBusy = true;
+                if (!Editing)
                 {
+                    Tarea.IdGrupo = Grupo.Id;
+                    Tarea.Ubicacion = string.Empty;
+
                     var tarea = await _servicioDatos.AddTarea(Tarea);
                     if (tarea != null)
                     {
@@ -53,22 +54,23 @@ namespace ClienteMovilGestionDeTareas.ViewModel.Tarea
                         await _navigator.PopAsync();
                     }
                 }
-                catch (Exception) { }
-
-            }
-            else
-            {
-                try
+                else
                 {
-                    //var res = await _servicioDatos.UpdateTarea(Tarea);
-                    var res = true;
+                    var res = await _servicioDatos.UpdateTarea(Tarea);
                     if (res)
                     {
                         await _page.MostrarAlerta("", "Tarea actualizada correctamente", "Ok");
                         await _navigator.PopAsync();
                     }
                 }
-                catch (Exception) { }
+            }
+            catch (Exception ex)
+            {
+                await _page.MostrarAlerta("Error", ex.Message, "Ok");
+            }
+            finally
+            {
+                IsBusy = false;
             }
         }
     }

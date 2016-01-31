@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ClienteMovilGestionDeTareas.View.Tarea.ListadoTareasView"
              Title ="{Binding Titulo}">
-  <StackLayout Padding="20">
+  <StackLayout Padding="20" Opacity="{Binding Opacity, Mode=TwoWay}" IsEnabled="{Binding Enabled, Mode=TwoWay}">
     <Label Text="{Binding MisTareasLbl}" XAlign="Center"></Label>
     <ListView ItemsSource="{Binding Tareas, Mode=TwoWay}" SelectedItem="{Binding TareaSeleccionada, Mode=TwoWay}">
       <ListView.ItemTemplate >

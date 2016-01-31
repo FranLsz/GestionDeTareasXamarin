@@ -8,9 +8,9 @@ using Xamarin.Forms;
 
 namespace ClienteMovilGestionDeTareas.View.Tarea
 {
-    public partial class EditarTareaView : ContentPage
+    public partial class DetalleTareaView : ContentPage
     {
-        public EditarTareaView()
+        public DetalleTareaView()
         {
             InitializeComponent();
         }

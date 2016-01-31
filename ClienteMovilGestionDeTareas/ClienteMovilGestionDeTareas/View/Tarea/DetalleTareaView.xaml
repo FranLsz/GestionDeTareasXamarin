@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ClienteMovilGestionDeTareas.View.Tarea.DetalleTareaView"
+             Title="{Binding Titulo}">
+
+  <StackLayout Padding="20">
+    <Label Text="{Binding Tarea.Fecha}" FontSize="15" XAlign="End"></Label>
+
+    <Label Text="{Binding Tarea.Titulo}" FontSize="40" XAlign="Center"></Label>
+    <Label Text=""></Label>
+    <Label Text="{Binding Tarea.Descripcion}" FontSize="25"></Label>
+
+    <StackLayout Orientation="Horizontal">
+      <Label Text="¿Finalizada?" FontSize="15"></Label>
+      <Label Text="{Binding Tarea.Finalizada}" FontSize="15"></Label>
+    </StackLayout>
+
+  </StackLayout>
+</ContentPage>

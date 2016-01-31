@@ -14,10 +14,10 @@ namespace ClienteMovilGestionDeTareas.View.Tarea {
     using Xamarin.Forms.Xaml;
     
     
-    public partial class EditarTareaView : ContentPage {
+    public partial class DetalleTareaView : ContentPage {
         
         private void InitializeComponent() {
-            this.LoadFromXaml(typeof(EditarTareaView));
+            this.LoadFromXaml(typeof(DetalleTareaView));
         }
     }
 }

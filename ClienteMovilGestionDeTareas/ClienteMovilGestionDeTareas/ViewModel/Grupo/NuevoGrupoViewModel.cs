@@ -42,11 +42,12 @@ namespace ClienteMovilGestionDeTareas.ViewModel.Grupo
 
         private async void Agregar()
         {
-            Grupo.IdUsuario = Session.User.Id;
-            //Tarea.Imagen = string.Empty;
-
             try
             {
+                IsBusy = true;
+                Grupo.IdUsuario = Session.User.Id;
+                //Tarea.Imagen = string.Empty;
+
                 var grupo = await _servicioDatos.AddGrupo(Grupo);
 
                 if (grupo != null)
@@ -55,9 +56,13 @@ namespace ClienteMovilGestionDeTareas.ViewModel.Grupo
                     await _navigator.PopAsync();
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                // ignored
+                await _page.MostrarAlerta("Error", ex.Message, "Ok");
+            }
+            finally
+            {
+                IsBusy = false;
             }
         }
     }

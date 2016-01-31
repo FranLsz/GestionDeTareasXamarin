@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ClienteMovilGestionDeTareas.View.Tarea.NuevaTareaView">
-  <StackLayout Padding="35">
+  <StackLayout Padding="35" Opacity="{Binding Opacity, Mode=TwoWay}" IsEnabled="{Binding Enabled, Mode=TwoWay}">
     <Label Text="{Binding TituloLbl}"></Label>
     <Entry Text="{Binding Tarea.Titulo}"></Entry>
     <Label Text="{Binding FechaLbl}"></Label>

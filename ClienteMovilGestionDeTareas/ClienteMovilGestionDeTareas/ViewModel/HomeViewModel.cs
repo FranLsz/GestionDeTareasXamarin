@@ -1,4 +1,5 @@
-﻿using System.Collections.ObjectModel;
+﻿using System;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
@@ -55,24 +56,36 @@ namespace ClienteMovilGestionDeTareas.ViewModel
 
         public async void VerListaTareas(GrupoVm model)
         {
-            var tareas = await _servicioDatos.GetTareas(model.GrupoModel.Id);
-
-            var oc = new ObservableCollection<TareaVm>();
-            foreach (var tareaModel in tareas)
+            try
             {
-                oc.Add(new TareaVm()
+                IsBusy = true;
+                var tareas = await _servicioDatos.GetTareas(model.GrupoModel.Id);
+
+                var oc = new ObservableCollection<TareaVm>();
+                foreach (var tareaModel in tareas)
                 {
-                    ComponentContext = Context,
-                    TareaModel = tareaModel
+                    oc.Add(new TareaVm()
+                    {
+                        ComponentContext = Context,
+                        TareaModel = tareaModel
+                    });
+                }
+
+                await _navigator.PushAsync<ListadoTareasViewModel>(vm =>
+                {
+                    vm.Titulo = model.GrupoModel.Nombre;
+                    vm.Grupo = model.GrupoModel;
+                    vm.Tareas = new ObservableCollection<TareaVm>(oc);
                 });
             }
-
-            await _navigator.PushAsync<ListadoTareasViewModel>(vm =>
+            catch (Exception ex)
             {
-                vm.Titulo = model.GrupoModel.Nombre;
-                vm.Grupo = model.GrupoModel;
-                vm.Tareas = new ObservableCollection<TareaVm>(oc);
-            });
+                await _page.MostrarAlerta("Error", ex.Message, "Ok");
+            }
+            finally
+            {
+                IsBusy = false;
+            }
         }
 
         private async void NuevoGrupo()
@@ -85,16 +98,28 @@ namespace ClienteMovilGestionDeTareas.ViewModel
 
         public async Task BorrarGrupo(int id)
         {
-            var res = await _servicioDatos.DeleteGrupo(id);
-
-            if (res)
+            try
             {
-                Grupos.Remove(Grupos.First(o => o.GrupoModel.Id == id));
-                await _page.MostrarAlerta("", "Grupo eliminado correctamente", "Ok");
+                IsBusy = true;
+                var res = await _servicioDatos.DeleteGrupo(id);
 
+                if (res)
+                {
+                    Grupos.Remove(Grupos.First(o => o.GrupoModel.Id == id));
+                    await _page.MostrarAlerta("", "Grupo eliminado correctamente", "Ok");
+
+                }
+                else
+                    await _page.MostrarAlerta("", "El grupo no pudo ser borrado", "Ok");
             }
-            else
-                await _page.MostrarAlerta("", "El grupo no pudo ser borrado", "Ok");
+            catch (Exception ex)
+            {
+                await _page.MostrarAlerta("Error", ex.Message, "Ok");
+            }
+            finally
+            {
+                IsBusy = false;
+            }
         }
     }
 }
