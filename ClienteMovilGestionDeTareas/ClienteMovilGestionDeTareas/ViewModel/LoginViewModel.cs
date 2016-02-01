@@ -7,6 +7,7 @@ using ClienteMovilGestionDeTareas.Service;
 using ClienteMovilGestionDeTareas.Util;
 using DataModel.ViewModel;
 using MvvmLibrary.Factorias;
+using Newtonsoft.Json;
 using Xamarin.Forms;
 
 namespace ClienteMovilGestionDeTareas.ViewModel
@@ -59,23 +60,12 @@ namespace ClienteMovilGestionDeTareas.ViewModel
                 if (us != null)
                 {
                     Session.User = us;
-                    //DependencyService.Get<IServicioFicheros>().GuardarTexto("Datos-del-usuario-" + Session.User.Email, "AppSettings.xml");
-                    var grupos = await _servicioDatos.GetGrupos(Session.User.Id);
-
-                    var oc = new ObservableCollection<GrupoVm>();
-                    foreach (var contactoModel in grupos)
-                    {
-                        oc.Add(new GrupoVm()
-                        {
-                            ComponentContext = Context,
-                            GrupoModel = contactoModel
-                        });
-                    }
+                    var txt = JsonConvert.SerializeObject(us);
+                    DependencyService.Get<IServicioFicheros>().GuardarTexto(txt, Cadenas.SettingsFile);
 
                     await _navigator.PushAsync<HomeViewModel>(o =>
                     {
                         o.Titulo = "Bienvenido " + Session.User.Nombre;
-                        o.Grupos = new ObservableCollection<GrupoVm>(oc);
                     }
                     );
                 }

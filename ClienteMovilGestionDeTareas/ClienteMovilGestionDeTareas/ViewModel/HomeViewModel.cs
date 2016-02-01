@@ -52,6 +52,23 @@ namespace ClienteMovilGestionDeTareas.ViewModel
         {
             Context = ctx;
             CmdNuevoGrupo = new Command(NuevoGrupo);
+            GetGrupos();
+        }
+
+        private async void GetGrupos()
+        {
+            var grupos = await _servicioDatos.GetGrupos(Session.User.Id);
+
+            var oc = new ObservableCollection<GrupoVm>();
+            foreach (var contactoModel in grupos)
+            {
+                oc.Add(new GrupoVm()
+                {
+                    ComponentContext = Context,
+                    GrupoModel = contactoModel
+                });
+            }
+            Grupos = oc;
         }
 
         public async void VerListaTareas(GrupoVm model)

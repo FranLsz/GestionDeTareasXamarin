@@ -2,16 +2,16 @@
 <Paths>
   <Jars></Jars>
   <ResolvedResourceDirectories>
-    <ResolvedResourceDirectory>C:\Users\Fran\Documents\Visual Studio 2015\Projects\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.Droid\obj\Debug\__library_projects__\RestSharp.Portable.HttpClient\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>C:\Users\Fran\Documents\Visual Studio 2015\Projects\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.Droid\obj\Debug\__library_projects__\RestSharp.Portable.HttpClient\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\res</ResolvedResourceDirectory>
   </ResolvedResourceDirectories>
   <ResolvedAssetDirectories>
-    <ResolvedAssetDirectory>C:\Users\Fran\Documents\Visual Studio 2015\Projects\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.Droid\obj\Debug\__library_projects__\RestSharp.Portable.HttpClient\library_project_imports\assets</ResolvedAssetDirectory>
-    <ResolvedAssetDirectory>C:\Users\Fran\Documents\Visual Studio 2015\Projects\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.Droid\obj\Debug\__library_projects__\RestSharp.Portable.HttpClient\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\assets</ResolvedAssetDirectory>
   </ResolvedAssetDirectories>
   <ResolvedEnvironmentFiles />
   <ResolvedResourceDirectoryStamps>
-    <ResolvedResourceDirectoryStamp>C:\Users\Fran\Documents\Visual Studio 2015\Projects\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.Droid\obj\Debug\__library_projects__\RestSharp.Portable.HttpClient.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>C:\Users\Fran\Documents\Visual Studio 2015\Projects\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.Droid\obj\Debug\__library_projects__\RestSharp.Portable.HttpClient.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android.stamp</ResolvedResourceDirectoryStamp>
   </ResolvedResourceDirectoryStamps>
 </Paths>

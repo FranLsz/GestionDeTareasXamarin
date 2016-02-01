@@ -5,13 +5,13 @@ namespace ClienteMovilGestionDeTareas.Util
 {
     public class Session
     {
-        public UsuarioModel User
+        public static UsuarioModel User
         {
             get { return (UsuarioModel)_session["User"]; }
             set { _session["User"] = value; }
         }
 
-        private Dictionary<string, object> _session = new Dictionary<string, object>();
+        private static Dictionary<string, object> _session = new Dictionary<string, object>();
 
         public object this[string index]
         {

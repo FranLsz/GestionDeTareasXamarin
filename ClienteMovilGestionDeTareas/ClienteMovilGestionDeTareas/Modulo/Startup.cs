@@ -1,12 +1,18 @@
-﻿using Autofac;
+﻿using System.Collections.ObjectModel;
+using Autofac;
+using ClienteMovilGestionDeTareas.Model;
+using ClienteMovilGestionDeTareas.Service;
+using ClienteMovilGestionDeTareas.Util;
 using ClienteMovilGestionDeTareas.View;
 using ClienteMovilGestionDeTareas.View.Grupo;
 using ClienteMovilGestionDeTareas.View.Tarea;
 using ClienteMovilGestionDeTareas.ViewModel;
 using ClienteMovilGestionDeTareas.ViewModel.Grupo;
 using ClienteMovilGestionDeTareas.ViewModel.Tarea;
+using DataModel.ViewModel;
 using MvvmLibrary.Factorias;
 using MvvmLibrary.Modulo;
+using Newtonsoft.Json;
 using Xamarin.Forms;
 
 namespace ClienteMovilGestionDeTareas.Modulo
@@ -39,12 +45,32 @@ namespace ClienteMovilGestionDeTareas.Modulo
         protected override void ConfigureApplication(IContainer container)
         {
             var viewFactory = container.Resolve<IViewFactory>();
-            var main = viewFactory.Resolve<LoginViewModel>(vm =>
+
+            var txt = DependencyService.Get<IServicioFicheros>().RecuperarTexto(Cadenas.SettingsFile);
+
+
+            if (string.IsNullOrEmpty(txt))
             {
-                vm.Titulo = "Inicio de sesión";
-            });
-            var np = new NavigationPage(main);
-            _application.MainPage = np;
+                var main = viewFactory.Resolve<LoginViewModel>(vm =>
+                {
+                    vm.Titulo = "Inicio de sesión";
+                });
+                var np = new NavigationPage(main);
+                _application.MainPage = np;
+            }
+            else
+            {
+                var data = JsonConvert.DeserializeObject<UsuarioModel>(txt);
+                Session.User = data;
+                var main = viewFactory.Resolve<HomeViewModel>(vm =>
+                {
+                    vm.Titulo = "Bienvenido de nuevo " + Session.User.Nombre;
+                });
+                var np = new NavigationPage(main);
+                _application.MainPage = np;
+            }
+
+
         }
     }
 }

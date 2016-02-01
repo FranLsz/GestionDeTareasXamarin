@@ -45,6 +45,7 @@
     <Compile Include="Service\IServicioFicheros.cs" />
     <Compile Include="Service\ServicioDatos.cs" />
     <Compile Include="Util\Cadenas.cs" />
+    <Compile Include="Util\ISettings.cs" />
     <Compile Include="Util\Session.cs" />
     <Compile Include="ViewModel\GeneralViewModel.cs" />
     <Compile Include="ViewModel\HomeViewModel.cs" />
