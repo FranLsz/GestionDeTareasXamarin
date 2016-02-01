@@ -14,7 +14,8 @@
               <MenuItem Text="Editar" Command="{Binding CmdEditar}"/>
               <MenuItem Text="Eliminar" Command="{Binding CmdBorrar}"/>
             </ViewCell.ContextActions>
-            <StackLayout>
+            <StackLayout Orientation="Horizontal">
+              <Image Source="monolist.png"></Image>
               <Label Text="{Binding TareaModel.Titulo}"></Label>
             </StackLayout>
           </ViewCell>

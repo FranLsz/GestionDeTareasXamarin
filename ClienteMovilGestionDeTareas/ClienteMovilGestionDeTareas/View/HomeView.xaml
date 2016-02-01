@@ -20,5 +20,6 @@
       </ListView.ItemTemplate>
     </ListView>
     <Button Text="{Binding NuevoGrupoLbl}" Command="{Binding CmdNuevoGrupo}"></Button>
+    <Button Text="{Binding LogoutLbl}" Command="{Binding CmdLogout}"></Button>
   </StackLayout>
 </ContentPage>

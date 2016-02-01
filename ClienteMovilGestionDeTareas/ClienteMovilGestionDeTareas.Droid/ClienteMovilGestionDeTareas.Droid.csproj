@@ -91,6 +91,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomControls\TexBoxDroid.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -111,6 +112,7 @@
   <ItemGroup>
     <Content Include="Properties\AndroidManifest.xml" />
     <AndroidResource Include="Resources\drawable\mono.png" />
+    <AndroidResource Include="Resources\drawable\monolist.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.csproj">

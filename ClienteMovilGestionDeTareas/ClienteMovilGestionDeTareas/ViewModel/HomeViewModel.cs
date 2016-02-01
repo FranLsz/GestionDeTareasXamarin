@@ -9,7 +9,6 @@ using ClienteMovilGestionDeTareas.Service;
 using ClienteMovilGestionDeTareas.Util;
 using ClienteMovilGestionDeTareas.ViewModel.Grupo;
 using ClienteMovilGestionDeTareas.ViewModel.Tarea;
-using DataModel.ViewModel;
 using MvvmLibrary.Factorias;
 using Xamarin.Forms;
 
@@ -20,9 +19,11 @@ namespace ClienteMovilGestionDeTareas.ViewModel
         public IComponentContext Context { get; set; }
 
         public ICommand CmdNuevoGrupo { get; set; }
+        public ICommand CmdLogout { get; set; }
 
         public string MisGruposLbl => "Mis grupos de tareas";
         public string NuevoGrupoLbl => "Nuevo grupo";
+        public string LogoutLbl => "Cerrar sesión";
 
         private ObservableCollection<GrupoVm> _grupos;
         public ObservableCollection<GrupoVm> Grupos
@@ -52,7 +53,20 @@ namespace ClienteMovilGestionDeTareas.ViewModel
         {
             Context = ctx;
             CmdNuevoGrupo = new Command(NuevoGrupo);
+            CmdLogout = new Command(Logout);
             GetGrupos();
+        }
+
+        public async void Logout()
+        {
+            Session.User = null;
+            DependencyService.Get<IServicioFicheros>().GuardarTexto("", Cadenas.SettingsFile);
+            //await _navigator.PopToRootAsync();
+            //await _navigator.PopAsync();
+            await _navigator.PushAsync<LoginViewModel>(vm =>
+            {
+                vm.Titulo = "Iniciar sesión";
+            });
         }
 
         private async void GetGrupos()
