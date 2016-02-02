@@ -6,6 +6,8 @@
     <AssemblyPart x:Name="Newtonsoft.Json" Source="Newtonsoft.Json.dll" />
     <AssemblyPart x:Name="Plugin.Geolocator.Abstractions" Source="Plugin.Geolocator.Abstractions.dll" />
     <AssemblyPart x:Name="Plugin.Geolocator" Source="Plugin.Geolocator.dll" />
+    <AssemblyPart x:Name="Plugin.Media.Abstractions" Source="Plugin.Media.Abstractions.dll" />
+    <AssemblyPart x:Name="Plugin.Media" Source="Plugin.Media.dll" />
     <AssemblyPart x:Name="RestSharp.Portable.Core" Source="RestSharp.Portable.Core.dll" />
     <AssemblyPart x:Name="RestSharp.Portable.HttpClient" Source="RestSharp.Portable.HttpClient.dll" />
     <AssemblyPart x:Name="System.Net.Http" Source="System.Net.Http.dll" />

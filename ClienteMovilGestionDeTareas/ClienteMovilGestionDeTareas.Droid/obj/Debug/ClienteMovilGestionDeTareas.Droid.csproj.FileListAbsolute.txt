@@ -92,5 +92,14 @@ C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeT
 C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.Droid\bin\Debug\GestionDeTareas.GestionDeTareas.apk
 C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.Droid\bin\Debug\GestionDeTareas.GestionDeTareas-Signed.apk
 C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.Droid\obj\Debug\android\bin\GestionDeTareas.GestionDeTareas.apk
+C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.Droid\bin\Debug\Plugin.Media.Abstractions.dll
+C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.Droid\bin\Debug\Plugin.Media.dll
+C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.Droid\bin\Debug\Plugin.Media.pdb
+C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.Droid\bin\Debug\Plugin.Media.xml
+C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.Droid\bin\Debug\Plugin.Media.Abstractions.pdb
+C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.Droid\bin\Debug\Plugin.Media.Abstractions.xml
+C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.Droid\bin\Debug\Plugin.Media.dll.mdb
+C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.Droid\bin\Debug\Plugin.Media.Abstractions.dll.mdb
+C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.Droid\bin\Debug\ClienteMovilGestionDeTareas.dll.mdb
 C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.Droid\obj\Debug\ClienteMovilGestionDeTareas.Droid.dll.mdb
 C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.Droid\bin\Debug\ClienteMovilGestionDeTareas.Droid.dll.mdb

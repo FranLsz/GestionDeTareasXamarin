@@ -5,6 +5,8 @@ using ClienteMovilGestionDeTareas.Util;
 using DataModel.ViewModel;
 using MvvmLibrary.Factorias;
 using Plugin.Geolocator;
+using Plugin.Media;
+using Plugin.Media.Abstractions;
 using Xamarin.Forms;
 
 namespace ClienteMovilGestionDeTareas.ViewModel.Tarea
@@ -13,6 +15,7 @@ namespace ClienteMovilGestionDeTareas.ViewModel.Tarea
     {
         public ICommand CmdAgregar { get; set; }
         public ICommand CmdAgregarUbicacion { get; set; }
+        public ICommand CmdAgregarImagen { get; set; }
 
         public string TituloLbl => "Titulo";
         public string DescripcionLbl => "Descripción";
@@ -37,6 +40,13 @@ namespace ClienteMovilGestionDeTareas.ViewModel.Tarea
             set { SetProperty(ref _longitud, value); }
         }
 
+        private ImageSource _imagen;
+        public ImageSource Imagen
+        {
+            get { return _imagen; }
+            set { SetProperty(ref _imagen, value); }
+        }
+
 
         public bool Editing { get; set; }
 
@@ -56,7 +66,27 @@ namespace ClienteMovilGestionDeTareas.ViewModel.Tarea
             _tarea = new TareaModel();
             CmdAgregar = new Command(Agregar);
             CmdAgregarUbicacion = new Command(AgregarUbicacion);
+            CmdAgregarImagen = new Command(AgregarImagen);
+        }
 
+        private async void AgregarImagen()
+        {
+            var f =
+                await
+                    CrossMedia.Current.TakePhotoAsync(new StoreCameraMediaOptions()
+                    {
+                        Directory = "Imagenes",
+                        Name = "tareaFoto.jpg"
+                    });
+            if (f != null)
+            {
+                Imagen = ImageSource.FromStream(() =>
+                {
+                    var st = f.GetStream();
+                    f.Dispose();
+                    return st;
+                });
+            }
         }
 
         private async void AgregarUbicacion()

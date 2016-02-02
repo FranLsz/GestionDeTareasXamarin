@@ -86,6 +86,8 @@ class MonoPackageManager_Resources {
 		"Plugin.CurrentActivity.dll",
 		"Plugin.Geolocator.Abstractions.dll",
 		"Plugin.Geolocator.dll",
+		"Plugin.Media.Abstractions.dll",
+		"Plugin.Media.dll",
 		"Plugin.Permissions.Abstractions.dll",
 		"Plugin.Permissions.dll",
 		"RestSharp.Portable.Core.dll",

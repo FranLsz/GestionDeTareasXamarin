@@ -3,23 +3,25 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:mios="clr-namespace:ClienteMovilGestionDeTareas.CustomControls;assembly=ClienteMovilGestionDeTareas"
              x:Class="ClienteMovilGestionDeTareas.View.Tarea.NuevaTareaView">
-  <StackLayout Padding="35" Opacity="{Binding Opacity, Mode=TwoWay}" IsEnabled="{Binding Enabled, Mode=TwoWay}">
-    <Label Text="{Binding TituloLbl}"></Label>
-    <mios:TexBox Text="{Binding Tarea.Titulo}"></mios:TexBox>
-    <Label Text="{Binding FechaLbl}"></Label>
-    <DatePicker Date="{Binding Tarea.Fecha}"></DatePicker>
-    <Label Text="{Binding DescripcionLbl}"></Label>
-    <Editor Text="{Binding Tarea.Descripcion}" VerticalOptions="FillAndExpand"></Editor>
+  <ScrollView>
+    <StackLayout Padding="35" Opacity="{Binding Opacity, Mode=TwoWay}" IsEnabled="{Binding Enabled, Mode=TwoWay}">
+      <Label Text="{Binding TituloLbl}"></Label>
+      <mios:TexBox Text="{Binding Tarea.Titulo}"></mios:TexBox>
+      <Label Text="{Binding FechaLbl}"></Label>
+      <DatePicker Date="{Binding Tarea.Fecha}"></DatePicker>
+      <Label Text="{Binding DescripcionLbl}"></Label>
+      <Editor Text="{Binding Tarea.Descripcion}" VerticalOptions="FillAndExpand"></Editor>
+      <Image Source="{Binding Imagen, Mode=TwoWay}"></Image>
+      <Button Text="{Binding AgregarImagenLbl}" Command="{Binding CmdAgregarImagen}"></Button>
+      <Button Text="{Binding AgregarDocumentoLbl}" Command="{Binding CmdAgregarDocumento}"></Button>
+      <StackLayout>
+        <Label Text="{Binding Latitud, Mode=TwoWay}"></Label>
+        <Label Text="{Binding Longitud, Mode=TwoWay}"></Label>
+      </StackLayout>
+      <Button Text="{Binding AgregarUbicacionLbl}"
+              Command="{Binding CmdAgregarUbicacion}"></Button>
 
-    <Button Text="{Binding AgregarImagenLbl}" Command="{Binding CmdAgregarImagen}"></Button>
-    <Button Text="{Binding AgregarDocumentoLbl}" Command="{Binding CmdAgregarDocumento}"></Button>
-    <StackLayout>
-      <Label Text="{Binding Latitud, Mode=TwoWay}"></Label>
-      <Label Text="{Binding Longitud, Mode=TwoWay}"></Label>
+      <Button Text="{Binding AgregarLbl}" Command="{Binding CmdAgregar}"></Button>
     </StackLayout>
-    <Button Text="{Binding AgregarUbicacionLbl}"
-            Command="{Binding CmdAgregarUbicacion}"></Button>
-
-    <Button Text="{Binding AgregarLbl}" Command="{Binding CmdAgregar}"></Button>
-  </StackLayout>
+  </ScrollView>
 </ContentPage>

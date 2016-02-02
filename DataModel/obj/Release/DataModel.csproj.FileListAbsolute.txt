@@ -1,0 +1,7 @@
+C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\DataModel\bin\Release\DataModel.dll
+C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\DataModel\bin\Release\DataModel.pdb
+C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\DataModel\obj\Release\DataModel.csprojResolveAssemblyReference.cache
+C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\DataModel\obj\Release\DataModel.dll
+C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\DataModel\obj\Release\DataModel.pdb
+C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\DataModel\obj\Release\DataModel.dll.mdb
+C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\DataModel\bin\Release\DataModel.dll.mdb

@@ -219,3 +219,9 @@ C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeT
 C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.WinPhone\Bin\Debug\Plugin.Geolocator.xml
 C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.WinPhone\Bin\Debug\Plugin.Geolocator.Abstractions.pdb
 C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.WinPhone\Bin\Debug\Plugin.Geolocator.Abstractions.xml
+C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.WinPhone\Bin\Debug\Plugin.Media.Abstractions.dll
+C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.WinPhone\Bin\Debug\Plugin.Media.dll
+C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.WinPhone\Bin\Debug\Plugin.Media.pdb
+C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.WinPhone\Bin\Debug\Plugin.Media.xml
+C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.WinPhone\Bin\Debug\Plugin.Media.Abstractions.pdb
+C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.WinPhone\Bin\Debug\Plugin.Media.Abstractions.xml
