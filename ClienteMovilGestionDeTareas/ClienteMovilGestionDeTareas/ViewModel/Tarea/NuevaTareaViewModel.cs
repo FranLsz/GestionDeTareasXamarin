@@ -4,6 +4,7 @@ using ClienteMovilGestionDeTareas.Service;
 using ClienteMovilGestionDeTareas.Util;
 using DataModel.ViewModel;
 using MvvmLibrary.Factorias;
+using Plugin.Geolocator;
 using Xamarin.Forms;
 
 namespace ClienteMovilGestionDeTareas.ViewModel.Tarea
@@ -11,6 +12,7 @@ namespace ClienteMovilGestionDeTareas.ViewModel.Tarea
     public class NuevaTareaViewModel : GeneralViewModel
     {
         public ICommand CmdAgregar { get; set; }
+        public ICommand CmdAgregarUbicacion { get; set; }
 
         public string TituloLbl => "Titulo";
         public string DescripcionLbl => "Descripción";
@@ -18,6 +20,24 @@ namespace ClienteMovilGestionDeTareas.ViewModel.Tarea
         public string AgregarLbl { get; set; }
         public string AgregarImagenLbl => "Agregar imagen";
         public string AgregarDocumentoLbl => "Agregar documento";
+        public string AgregarUbicacionLbl => "Agregar ubicación";
+
+
+        private string _latitud;
+        public string Latitud
+        {
+            get { return _latitud; }
+            set { SetProperty(ref _latitud, value); }
+        }
+
+        private string _longitud;
+        public string Longitud
+        {
+            get { return _longitud; }
+            set { SetProperty(ref _longitud, value); }
+        }
+
+
         public bool Editing { get; set; }
 
         private TareaModel _tarea;
@@ -35,6 +55,25 @@ namespace ClienteMovilGestionDeTareas.ViewModel.Tarea
         {
             _tarea = new TareaModel();
             CmdAgregar = new Command(Agregar);
+            CmdAgregarUbicacion = new Command(AgregarUbicacion);
+
+        }
+
+        private async void AgregarUbicacion()
+        {
+            try
+            {
+                var loc = CrossGeolocator.Current;
+                var pos = await loc.GetPositionAsync();
+
+                Latitud = pos.Latitude.ToString();
+                Longitud = pos.Longitude.ToString();
+            }
+            catch (Exception e)
+            {
+                await _page.MostrarAlerta("", e.Message, "Ok");
+            }
+
         }
 
         private async void Agregar()

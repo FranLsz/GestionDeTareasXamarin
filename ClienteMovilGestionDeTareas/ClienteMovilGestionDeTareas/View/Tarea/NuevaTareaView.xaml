@@ -13,6 +13,12 @@
 
     <Button Text="{Binding AgregarImagenLbl}" Command="{Binding CmdAgregarImagen}"></Button>
     <Button Text="{Binding AgregarDocumentoLbl}" Command="{Binding CmdAgregarDocumento}"></Button>
+    <StackLayout>
+      <Label Text="{Binding Latitud, Mode=TwoWay}"></Label>
+      <Label Text="{Binding Longitud, Mode=TwoWay}"></Label>
+    </StackLayout>
+    <Button Text="{Binding AgregarUbicacionLbl}"
+            Command="{Binding CmdAgregarUbicacion}"></Button>
 
     <Button Text="{Binding AgregarLbl}" Command="{Binding CmdAgregar}"></Button>
   </StackLayout>
