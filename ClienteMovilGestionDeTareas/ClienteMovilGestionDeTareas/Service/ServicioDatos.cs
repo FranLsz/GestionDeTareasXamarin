@@ -84,11 +84,11 @@ namespace ClienteMovilGestionDeTareas.Service
         #endregion
 
 
-        #region Tarea
+        #region Grupo
 
         public async Task<GrupoModel> AddGrupo(GrupoModel model)
         {
-            var request = new RestRequest("Tarea")
+            var request = new RestRequest("Grupo")
             {
                 Method = Method.POST
             };

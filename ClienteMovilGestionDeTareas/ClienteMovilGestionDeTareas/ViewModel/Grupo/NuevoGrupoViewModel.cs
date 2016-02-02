@@ -30,6 +30,7 @@ namespace ClienteMovilGestionDeTareas.ViewModel.Grupo
             _grupo = new GrupoModel();
             CmdAgregar = new Command(Agregar);
             CmdAgregarImagen = new Command(AgregarImagen);
+            MessagingCenter.Send(this, "Hola");
         }
 
         private void AgregarImagen()
@@ -52,6 +53,7 @@ namespace ClienteMovilGestionDeTareas.ViewModel.Grupo
 
                 if (grupo != null)
                 {
+                    MessagingCenter.Send(grupo, "AddGrupo");
                     await _page.MostrarAlerta("", "Grupo creado correctamente", "Ok");
                     await _navigator.PopAsync();
                 }

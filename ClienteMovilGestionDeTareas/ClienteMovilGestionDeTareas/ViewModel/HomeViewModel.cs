@@ -9,6 +9,7 @@ using ClienteMovilGestionDeTareas.Service;
 using ClienteMovilGestionDeTareas.Util;
 using ClienteMovilGestionDeTareas.ViewModel.Grupo;
 using ClienteMovilGestionDeTareas.ViewModel.Tarea;
+using DataModel.ViewModel;
 using MvvmLibrary.Factorias;
 using Xamarin.Forms;
 
@@ -54,6 +55,15 @@ namespace ClienteMovilGestionDeTareas.ViewModel
             Context = ctx;
             CmdNuevoGrupo = new Command(NuevoGrupo);
             CmdLogout = new Command(Logout);
+            MessagingCenter.Subscribe<GrupoModel>(this, "AddGrupo", (sender) =>
+            {
+                var gvm = new GrupoVm
+                {
+                    ComponentContext = Context,
+                    GrupoModel = sender
+                };
+                Grupos.Add(gvm);
+            });
             GetGrupos();
         }
 
