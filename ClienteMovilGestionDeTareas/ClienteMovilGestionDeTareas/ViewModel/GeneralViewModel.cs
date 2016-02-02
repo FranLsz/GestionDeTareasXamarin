@@ -17,7 +17,7 @@ namespace ClienteMovilGestionDeTareas.ViewModel
             _navigator = navigator;
             _servicioDatos = servicioDatos;
             Session = session;
-            Session = session;
+            _page = page;
         }
     }
 }

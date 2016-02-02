@@ -70,7 +70,11 @@ C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeT
 C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\obj\Debug\DetalleTareaView.xaml.g.cs
 C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\obj\Debug\ClienteMovilGestionDeTareas.dll
 C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\obj\Debug\ClienteMovilGestionDeTareas.pdb
-C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\obj\Debug\ClienteMovilGestionDeTareas.dll.mdb
-C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\bin\Debug\ClienteMovilGestionDeTareas.dll.mdb
+C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\bin\Debug\Plugin.Geolocator.Abstractions.dll
+C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\bin\Debug\Plugin.Geolocator.dll
+C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\bin\Debug\Plugin.Geolocator.pdb
+C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\bin\Debug\Plugin.Geolocator.xml
+C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\bin\Debug\Plugin.Geolocator.Abstractions.pdb
+C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\bin\Debug\Plugin.Geolocator.Abstractions.xml
 C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\obj\Debug\ClienteMovilGestionDeTareas.dll.mdb
 C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas\bin\Debug\ClienteMovilGestionDeTareas.dll.mdb

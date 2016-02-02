@@ -4,6 +4,11 @@ C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeT
 C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.Droid\obj\Debug\assemblies\Mono.Android.dll
 C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.Droid\obj\Debug\assemblies\mscorlib.dll
 C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.Droid\obj\Debug\assemblies\Newtonsoft.Json.dll
+C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.Droid\obj\Debug\assemblies\Plugin.CurrentActivity.dll
+C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.Droid\obj\Debug\assemblies\Plugin.Geolocator.Abstractions.dll
+C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.Droid\obj\Debug\assemblies\Plugin.Geolocator.dll
+C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.Droid\obj\Debug\assemblies\Plugin.Permissions.Abstractions.dll
+C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.Droid\obj\Debug\assemblies\Plugin.Permissions.dll
 C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.Droid\obj\Debug\assemblies\RestSharp.Portable.Core.dll
 C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.Droid\obj\Debug\assemblies\RestSharp.Portable.HttpClient.dll
 C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.Droid\obj\Debug\assemblies\System.Core.dll

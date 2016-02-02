@@ -213,3 +213,9 @@ C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeT
 C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.WinPhone\obj\Debug\ClienteMovilGestionDeTareas.WinPhone.dll
 C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.WinPhone\obj\Debug\ClienteMovilGestionDeTareas.WinPhone.pdb
 C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.WinPhone\obj\Debug\XapCacheFile.xml
+C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.WinPhone\Bin\Debug\Plugin.Geolocator.Abstractions.dll
+C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.WinPhone\Bin\Debug\Plugin.Geolocator.dll
+C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.WinPhone\Bin\Debug\Plugin.Geolocator.pdb
+C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.WinPhone\Bin\Debug\Plugin.Geolocator.xml
+C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.WinPhone\Bin\Debug\Plugin.Geolocator.Abstractions.pdb
+C:\Users\Alumno\Documents\GitRepos\GestionDeTareasXamarin\ClienteMovilGestionDeTareas\ClienteMovilGestionDeTareas.WinPhone\Bin\Debug\Plugin.Geolocator.Abstractions.xml
