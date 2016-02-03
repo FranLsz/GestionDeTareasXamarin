@@ -14,9 +14,8 @@ namespace ClienteMovilGestionDeTareas.View.Tarea {
     using Xamarin.Forms.Xaml;
     
     
-    public partial class NuevaTareaView : global::Xamarin.Forms.ContentPage {
+    public partial class NuevaTareaView : ContentPage {
         
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(NuevaTareaView));
         }

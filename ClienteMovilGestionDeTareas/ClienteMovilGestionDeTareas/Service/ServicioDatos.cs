@@ -190,6 +190,21 @@ namespace ClienteMovilGestionDeTareas.Service
 
         #endregion
 
+        #region Ficheros
+
+        public async Task<string> UploadFichero(FicheroModel model)
+        {
+            var request = new RestRequest();
+            request.Method = Method.POST;
+
+            request.AddJsonBody(model);
+            var r = await _client.Execute<string>(request);
+            return r.Data;
+        }
+
+        #endregion
+
+
 
 
     }

@@ -7,6 +7,7 @@ using MvvmLibrary.Factorias;
 using Plugin.Geolocator;
 using Plugin.Media;
 using Plugin.Media.Abstractions;
+using RestSharp.Portable.Content;
 using Xamarin.Forms;
 
 namespace ClienteMovilGestionDeTareas.ViewModel.Tarea
@@ -80,12 +81,22 @@ namespace ClienteMovilGestionDeTareas.ViewModel.Tarea
                     });
             if (f != null)
             {
-                Imagen = ImageSource.FromStream(() =>
+                var st = f.GetStream();
+                f.Dispose();
+
+                var l = st.Length;
+                byte[] bt = new byte[1];
+                st.Read(bt, 0, bt.Length);
+
+                var fichero = new FicheroModel
                 {
-                    var st = f.GetStream();
-                    f.Dispose();
-                    return st;
-                });
+                    Id = 22,
+                    Nombre = Convert.ToBase64String(bt)
+                };
+
+                await _servicioDatos.UploadFichero(fichero);
+
+                Imagen = ImageSource.FromStream(() => st);
             }
         }
 

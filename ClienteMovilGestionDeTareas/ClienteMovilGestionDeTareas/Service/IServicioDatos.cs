@@ -32,5 +32,11 @@ namespace ClienteMovilGestionDeTareas.Service
         Task<bool> DeleteTarea(int id);
 
         #endregion
+
+        #region Ficheros
+
+        Task<string> UploadFichero(FicheroModel model);
+
+        #endregion
     }
 }

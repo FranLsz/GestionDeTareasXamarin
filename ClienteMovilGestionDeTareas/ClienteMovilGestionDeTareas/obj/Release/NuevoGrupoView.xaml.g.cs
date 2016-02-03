@@ -14,9 +14,8 @@ namespace ClienteMovilGestionDeTareas.View.Grupo {
     using Xamarin.Forms.Xaml;
     
     
-    public partial class NuevoGrupoView : global::Xamarin.Forms.ContentPage {
+    public partial class NuevoGrupoView : ContentPage {
         
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(NuevoGrupoView));
         }
